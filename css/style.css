@@ -1,0 +1,98 @@
+
+header{
+    width: 1500px;
+    background-color: #fff; 
+    height: 80px;
+}
+
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto; /*distribui a margem por igual*/
+    display: flex;
+    justify-content: space-between; /*separa os conteudos apos utilizar o diplay flex*/
+    align-items: center; /*alinhar os elementos*/
+}
+
+.search{
+    
+}
+.area-search{
+    width: 200px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1,5px;
+    border-color: gray;
+
+}
+
+#button-search{
+    height: 30px;
+    border-style: solid;
+    border-width: 1,5px;
+    border-color: gray;
+    
+
+}
+.container-grid img{
+    width: 180px; /*tamanho da logo*/
+}
+
+.menu{
+    width: 600px; /*largura*/
+    display: flex;
+    justify-content: space-between; /*Distribue os itens uniformemente*/
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase; /*coloca tudo em maiusculo*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner{
+    height: 350px; /*altura*/
+    width: 1500px; /*largura*/
+    background-image: url(../img/banner-image.jpg); /*o ".." sai da pasta do CSS*/
+    background-repeat: none;
+    background-size: cover; /*cobertura completa*/
+}
+/*formatacao do botão*/
+
+.texto-banner h1{
+    color: white;
+    margin: 0%;
+}
+
+.texto-banner p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0%;
+    margin-bottom: 40px;
+}
+
+.texto-banner a{
+    background-color: #c31616;
+    color: white;
+    text-decoration: none; /*tira o sublinhado do link*/
+    text-transform: uppercase; /*coloca em maiusculo*/
+    padding: 15px;
+    border-radius: 7px; /*arredondamento bordas*/
+    align-self: center;
+}
+
+.texto-banner{
+    width: 350px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+
+}
+.posicao-texto{
+    justify-content: flex-end;
+}
