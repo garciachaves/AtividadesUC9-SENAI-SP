@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header{
     width: 1230px;
@@ -97,8 +102,19 @@ header{
     font-family: Helvetica, Arial, sans-serif;
     color: white;
     text-align: center;
-
 }
+
 .posicao-texto{
     justify-content: flex-end;
+}
+
+
+#destaques{
+    width: 60%;
+    margin: 0px 50px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    background-color: yellow;
+    color: red;
+
 }
