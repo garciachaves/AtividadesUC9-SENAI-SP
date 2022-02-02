@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header{
     width: 1230px;
     background-color: #fff; 
     height: 80px;
+    margin: auto; /*alinha os elementos no meio da página*/
 }
 
 .container-grid{
@@ -30,6 +32,7 @@ header{
 
 #button-search{
     height: 30px;
+    width: 80px;
     border-style: solid;
     border-width: 1px;
     border-color: gray;
@@ -45,7 +48,7 @@ header{
 }
 .container-grid img{
     width: 180px; /*tamanho da logo*/
-    margin-left: 100px;
+    margin-left: 70px;
 }
 
 .menu{
@@ -108,13 +111,149 @@ header{
     justify-content: flex-end;
 }
 
-
-#destaques{
-    width: 60%;
-    margin: 0px 50px;
+.titulo-categoria {
+    width: 1230px; /*largura*/
+    height: 30px;
     box-sizing: border-box;
-    border: 1px solid red;
-    background-color: yellow;
-    color: red;
+    /*border: 1px solid red;*/
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
 
+}
+
+.categoria1 {
+    width: 1230px; /*largura*/
+    height: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.line-before, .line-after {
+    width: 1230px;
+    height: 0;
+    margin: 20px;
+    color: white;
+    border: 1px solid #a7a7a7;
+}
+
+.titulo{
+    width: 40%;
+    background-color: white;
+    font-size: 18px;
+    margin: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.categoria1-conteudo {
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /*alinha na horizontal com espaçamento uniforme*/
+    border: 1px solid gray;
+    align-items: center; /*alinha na vertical*/
+    
+}
+
+
+.produto-destaque{
+    height: 200px;
+    width: 30%;
+    background-color: black;
+    margin: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.produto { /*imagem do produto destaque*/
+    height: 180px;
+    align-items: center;
+}
+
+.categoria2-conteudo {
+    height: 350px;
+    display: flex;
+    justify-content: space-between; /*alinha na horizontal com espaçamento uniforme*/
+    border: 1px solid gray;
+    align-items: center; /*alinha na vertical*/
+    
+}
+
+.jogo-promo{
+    height: 300px;
+    width: 170px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.descricao-produto{
+    height: 200px;
+    width: 160px;
+    margin-top: 10px;
+}
+
+.text-product{
+    color: white;
+    text-align: center;
+}
+
+.categoria2 {
+    width: 1230px; /*largura*/
+    height: 350px;
+    text-align: center;
+    margin: auto;
+}
+.jogo { /*imagem do jogo*/
+    height: 150px;
+    width: auto;
+    margin: 10px;
+}
+
+.footer-top{
+    width: 1230px; /*largura*/
+    height: 200px;
+    border: 1px solid black;
+    margin: auto; /*distribui a margem por igual*/
+    display: flex;
+    justify-content: space-between; /*separa os conteudos apos utilizar o diplay flex*/
+    /*align-items: center; alinhar os elementos*/
+    color: white;
+    background-color: black;
+}
+
+.footer-margin{
+    width: 1230px; /*largura*/
+    height: 80px;
+    border: 1px solid black;
+    margin: auto; /*distribui a margem por igual*/
+    /*display: flex;*/
+    /*justify-content: space-between; separa os conteudos apos utilizar o diplay flex*/
+    /*align-items: center; alinhar os elementos*/
+}
+
+
+footer h2{
+    font-size: 14px;
+}
+
+footer div{
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo-footer{
+    width: 150px;
+    margin-bottom: 0;
+}
+
+.footer-margin p{
+    margin: 15px;
+    font-size: 15px;
 }
