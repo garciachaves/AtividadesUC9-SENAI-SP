@@ -21,44 +21,60 @@ header{
     align-items: center; /*alinhar os elementos*/
 }
 
-.area-search{
-    width: 200px;
-    height: 30px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
-
-}
-
-#button-search{
-    height: 30px;
-    width: 80px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
-
-}
-
 .menu-inf{
     height: 60px;
     border-top: solid;
     border-color: gray;
     border-width: 1px;
-    align-items: center;
 }
+
+.search{
+    margin-right: 200px;
+}
+
+.area-search{
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    font-size: small;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.area-search:hover{
+    border: 2px solid;
+}
+
+#button-search{
+    height: 30px;
+    width: 80px;
+    cursor: pointer; /*muda cursor para mãozinha*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+#button-search:hover{
+    background-color: rgb(182, 182, 182);
+    border: 2px solid black;
+}
+
+
 .container-grid img{
     width: 180px; /*tamanho da logo*/
-    margin-left: 70px;
+    margin-left: 200px;    
 }
 
 .menu{
     width: 800px; /*largura*/
+    margin-left: 200px;
     display: flex;
     justify-content: space-between; /*Distribue os itens uniformemente*/
-    margin-left: 200px;
 }
 
 .menu a{
+    padding: 10px;
     color: black;
     text-decoration: none;
     text-transform: uppercase; /*coloca tudo em maiusculo*/
@@ -77,31 +93,43 @@ header{
 /*formatacao do botão*/
 
 .texto-banner h1{
+    width: 200px;
     color: white;
     margin: 0%;
+    display: block;
+    margin-inline: auto;
 }
 
 .texto-banner p{
-    color: white;
+    color: yellow;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
     margin-top: 0%;
     margin-bottom: 40px;
 }
 
 .texto-banner a{
-    background-color: #c31616;
+    padding: 8px 25px; /*cima e abaixo - direita e esquerda*/
+    background-color: #e60f0f;
     color: white;
     text-decoration: none; /*tira o sublinhado do link*/
     text-transform: uppercase; /*coloca em maiusculo*/
-    padding: 15px;
-    border-radius: 7px; /*arredondamento bordas*/
+    border-radius: 0px; /*arredondamento bordas*/
     align-self: center;
 }
 
+.texto-banner a:hover{ /*ao passar o cursor muda cor*/
+    background-color: #ff3939;
+}
+
+.menu a:hover {
+    background-color: rgb(221, 220, 220);
+}
+
+
 .texto-banner{
-    width: 600px;
+    width: 750px;
     font-family: Helvetica, Arial, sans-serif;
     color: white;
     text-align: center;
@@ -122,14 +150,6 @@ header{
 
 }
 
-.categoria1 {
-    width: 1230px; /*largura*/
-    height: 300px;
-    text-align: center;
-    margin: auto;
-}
-
-
 
 .line-before, .line-after {
     width: 1230px;
@@ -141,23 +161,31 @@ header{
 
 .titulo{
     width: 40%;
-    background-color: white;
-    font-size: 18px;
+    font-size: 12px;
     margin: 10px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.categoria1-conteudo {
+.categoria1 {
+    width: 1230px; /*largura*/
     height: 300px;
-    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.categoria1-conteudo {
+    width: 1000px;
+    height: 220px;
+    margin: 40px;
+    text-align: center;
     display: flex;
     justify-content: space-between; /*alinha na horizontal com espaçamento uniforme*/
-    border: 1px solid gray;
     align-items: center; /*alinha na vertical*/
     
 }
-
 
 .produto-destaque{
     height: 200px;
@@ -167,40 +195,16 @@ header{
     color: white;
     display: flex;
     justify-content: space-between;
-    
-
-}
-
-.produto { /*imagem do produto destaque*/
-    height: 180px;
     align-items: center;
 }
 
 .categoria2-conteudo {
+    width: 1000px;
     height: 350px;
     display: flex;
     justify-content: space-between; /*alinha na horizontal com espaçamento uniforme*/
-    border: 1px solid gray;
     align-items: center; /*alinha na vertical*/
     
-}
-
-.jogo-promo{
-    height: 300px;
-    width: 170px;
-    border: 1px solid black;
-    margin: auto;
-}
-
-.descricao-produto{
-    height: 200px;
-    width: 160px;
-    margin-top: 10px;
-}
-
-.text-product{
-    color: white;
-    text-align: center;
 }
 
 .categoria2 {
@@ -208,17 +212,98 @@ header{
     height: 350px;
     text-align: center;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
-.jogo { /*imagem do jogo*/
+
+
+/*#button-emphasis{
+    height: 30px;
+    width: 80px;
+    cursor: pointer; /*muda cursor para mãozinha
+    border-style: solid;
+    border-width: 1px;
+}
+
+#button-emphasis:hover{
+    background-color: rgb(255, 200, 187);
+
+}*/
+
+.button{
+    height: 30px;
+    width: 80px;
+    cursor: pointer; /*muda cursor para mãozinha*/
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.button:hover{
+    background-color: rgb(255, 200, 187);
+
+}
+
+.produto { /*imagem do produto destaque*/
     height: 150px;
-    width: auto;
+    padding: 10px;
+}
+
+
+
+.product-title{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.game-promo{
+    height: 300px;
+    width: 170px;
+    /*border: 1px solid black;*/
+    margin: auto;
+}
+
+.container-descricao-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%; /*margem interna*/
+    /*border: 1px solid white;*/
+}
+
+.emphasis {
+    height: 200px;
+    width: 160px;
+}
+
+.product-price {
+    font-weight: bold;
+}
+
+
+.product-price::before{
+    content: "R$ ";
+    font-size: 80%;
+    font-weight: normal;
+}
+
+.game-img { /*imagem do jogo*/
+    height: 150px;
+    width: 110px;
     margin: 10px;
+}
+
+.text-games{
+    height: 125px;
+    width: 170px;
 }
 
 .footer-top{
     width: 1230px; /*largura*/
     height: 200px;
-    border: 1px solid black;
     margin: auto; /*distribui a margem por igual*/
     display: flex;
     justify-content: space-between; /*separa os conteudos apos utilizar o diplay flex*/
@@ -230,8 +315,11 @@ header{
 .footer-margin{
     width: 1230px; /*largura*/
     height: 80px;
-    border: 1px solid black;
     margin: auto; /*distribui a margem por igual*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     /*display: flex;*/
     /*justify-content: space-between; separa os conteudos apos utilizar o diplay flex*/
     /*align-items: center; alinhar os elementos*/
@@ -254,6 +342,23 @@ footer div{
 }
 
 .footer-margin p{
-    margin: 15px;
-    font-size: 15px;
+    width: 1000px;
+    font-size: 12px;
+    margin: 10px;
+}
+
+.menu-footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 120px;
+    margin-bottom: 5px;
+}
+.menu-footer a:hover{
+    font-weight: bold;
+
 }
